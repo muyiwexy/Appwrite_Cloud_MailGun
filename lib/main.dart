@@ -33,10 +33,10 @@ class _HomepageState extends State<Homepage> {
   UrlModel? urlModel;
   bool? isLoading;
 
-  String databaseID = "url_database";
-  String collectionID = "url_collection";
-  String documentID = "document1";
-  String functionID = "6418523e6138d22728cd";
+  String databaseID = "<database ID>";
+  String collectionID = "<CollectionID>";
+  String documentID = "<DocumentID>";
+  String functionID = "<FUnctionID>";
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _HomepageState extends State<Homepage> {
     isLoading = false;
     client
       ..setEndpoint("https://cloud.appwrite.io/v1")
-      ..setProject("64185217b0571f7fafc6");
+      ..setProject("<ProjectID>");
 
     account = Account(client);
     databases = Databases(client);
